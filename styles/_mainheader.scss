@@ -1,0 +1,27 @@
+/*
+    Main header
+*/
+.mainheader{
+    background-color: $secondary-color;
+    padding: 10px 0px;
+}
+.mainheader__container{
+    align-items: center;
+}
+.mainheader__logo{
+    width: 120px;
+}
+.mainheader__link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+.mainheader__link:hover{
+    color: $primary-color;
+}
+@media(max-width: $breakpoint-sm){
+    .mainheader{
+        
+    }
+}

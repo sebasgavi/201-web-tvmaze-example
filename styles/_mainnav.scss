@@ -1,0 +1,21 @@
+/*
+    Main nav
+*/
+.mainnav{
+    background-color: $primary-color;
+}
+.mainnav__container{
+    flex-wrap: wrap;
+}
+.mainnav__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 8px;
+    font-size: .8em;
+}
+.mainnav__link:hover{
+    background-color: $secondary-color;
+}
+.mainnav__link:nth-child(1){
+    margin-left: -8px;
+}

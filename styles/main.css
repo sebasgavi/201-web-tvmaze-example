@@ -1,100 +1,143 @@
-*{
-    box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body, html{
-    margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+body, html {
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
 }
 
-.container{
-    max-width: 960px;
-    margin: 0px auto;
-    display: flex;
-    padding: 0px 8px;
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 8px;
 }
 
 /*
     Main nav
 */
-.mainnav{
-    background-color: #3C948B;
-}
-.mainnav__container{
-    flex-wrap: wrap;
-}
-.mainnav__link{
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 8px;
-    font-size: .8em;
-}
-.mainnav__link:hover{
-    background-color: #3F3F3F;
-}
-.mainnav__link:nth-child(1){
-    margin-left: -8px;
+.mainnav {
+  background-color: #3c948b;
 }
 
+.mainnav__container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
+.mainnav__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 8px;
+  font-size: .8em;
+}
+
+.mainnav__link:hover {
+  background-color: #3f3f3f;
+}
+
+.mainnav__link:nth-child(1) {
+  margin-left: -8px;
+}
 
 /*
     Main header
 */
-.mainheader{
-    background-color: #3F3F3F;
-    padding: 10px 0px;
-}
-.mainheader__container{
-    align-items: center;
-}
-.mainheader__logo{
-    width: 120px;
-}
-.mainheader__link{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-left: 20px;
-}
-.mainheader__link:hover{
-    color: #3C948B;
+.mainheader {
+  background-color: #3f3f3f;
+  padding: 10px 0px;
 }
 
+.mainheader__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-.search{
-    height: 35px;
-    width: 300px;
-    display: flex;
-    margin-left: 20px;
-    margin-right: auto;
+.mainheader__logo {
+  width: 120px;
 }
-.search__input{
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-    height: 100%;
-    border: 1px solid gray;
-    width: 80%;
-    padding: 6px 8px;
+
+.mainheader__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 20px;
 }
-.search__input:focus{
-    outline: none;
-    box-shadow: 0px 0px 6px rgba(255,255,255,.5);
+
+.mainheader__link:hover {
+  color: #3c948b;
 }
-.search__input::placeholder{
-    color: lightgray;
+
+.search {
+  height: 35px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  margin-right: auto;
 }
-.search__button{
-    height: 100%;
-    width: 20%;
-    background-color: #3C948B;
-    border-top-right-radius: 17px;
-    border-bottom-right-radius: 17px;
-    border: none;
-    transition: background-color .3s ease;
-    outline: none;
+
+.search__input {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  height: 100%;
+  border: 1px solid #3c948b;
+  width: 80%;
+  padding: 6px 8px;
 }
-.search__button:hover{
-    background-color: #71c5bd;
-    cursor: pointer;
+
+.search__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
+
+.search__input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.search__input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+.search__input::-ms-input-placeholder {
+  color: lightgray;
+}
+
+.search__input::placeholder {
+  color: lightgray;
+}
+
+.search__button {
+  height: 100%;
+  width: 20%;
+  background-color: #3c948b;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  border: none;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  outline: none;
+}
+
+.search__button:hover {
+  background-color: #69c2b9;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
